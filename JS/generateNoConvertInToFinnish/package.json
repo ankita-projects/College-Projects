@@ -1,0 +1,17 @@
+{
+  "name": "generatenoconvertintofinnish",
+  "version": "1.0.0",
+  "description": "Utility to generate random numbers and convert them in Finnish",
+  "main": "GenerateConvert.js",
+  "dependencies": {
+    "num-to-words": "^0.2.1",
+    "numerot": "^0.2.1",
+    "translate": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankita",
+  "license": "ISC"
+}
