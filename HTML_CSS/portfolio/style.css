@@ -12,24 +12,14 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 #hero{
-    height:190px;
-    margin:0;
-    padding:0;
-}
-.center{
-  width:100px;
-  max-width:300px;
-  object-fit: contain;
-  float: none;
+    height:100px;
 }
 
 h2 {
   font-size: large;
 }
 img {
-  height: 300px;
-  width: 500px;
-  float: left;
+  height: 100px;
 }
 #section1{
   clear: both;
