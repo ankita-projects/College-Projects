@@ -1,4 +1,4 @@
-function jackPot() {
+
   let randomNumList = [];
   let winningCombination = [1, 1, 1, 1, 1];
   let losingCombination = [0, 0, 0, 0, 0];
@@ -23,4 +23,4 @@ function jackPot() {
         winningProbability
     );
   }
-}
+

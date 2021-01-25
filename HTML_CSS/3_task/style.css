@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(247, 241, 242);
+   
+}
+header{
+    background-color:rgb(234, 172, 240);
+}
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+}
+li{
+    display: inline;
+}
+img{
+    size:10rem;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th{
+      background-color: rgb(rgb(244, 164, 96));
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  #ceo th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:tomato;
+    color: white;
+  }
