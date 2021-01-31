@@ -7,21 +7,35 @@ html {
 }
 
 body {
-  background-color:#faf2e5;
+  background-color:#f7f7f7;
   color: rgb(9, 9, 10);
   font-family: "Times New Roman", Times, serif;
 }
 #hero{
     height:100px;
+   }
+main{
+   background-image: url(images/coffee.jpg);
+   background-size: cover;
+   height: 100vh;
+}
+.container1{
+  margin: 80px;
 }
 
 h2 {
   font-size: large;
 }
+#image1{
+  float:left;
+}
 #image{
   height: 300px;
   width: 500px;
   float: right;
+}
+#image2{
+  float:left;
 }
 
 ul {
@@ -31,8 +45,9 @@ li {
   display: inline;
 }
 header {
-  background:#f8f8b0;
+
   text-align: center;
+  
 }
 a {
   width: 100px;
@@ -53,6 +68,7 @@ p{
   margin:16px 0;
   line-height: 1;
   margin-bottom:200px;
+  line-height:1.2;
 }
 h2{
   font-size: 20px;
@@ -68,3 +84,5 @@ h2{
   text-align: center;
   size:0px;
 }
+
+
