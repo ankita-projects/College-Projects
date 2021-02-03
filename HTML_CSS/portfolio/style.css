@@ -11,13 +11,26 @@ body {
   color: rgb(9, 9, 10);
   font-family: "Times New Roman", Times, serif;
 }
-#hero{
-    height:100px;
-   }
+#header {
+
+  padding: 35px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  height: 100px;
+  position:fixed;
+  z-index: 1;
+
+}
 main{
-   background-image: url(images/coffee.jpg);
-   background-size: cover;
-   height: 100vh;
+  background-image: url(images/coffee.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 .container1{
   margin: 80px;
