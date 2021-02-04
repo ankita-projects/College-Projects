@@ -31,8 +31,9 @@ body {
 }
 
 .bulb.active {
-    background-color: blue;
+    background-color: rgb(218, 221, 17);
 }
 #game{
-    margin:200px;
+    top: 50px;
+    left: 300px;
 }
