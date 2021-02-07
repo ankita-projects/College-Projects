@@ -1,0 +1,19 @@
+body{
+    background-color: floralwhite;
+}
+@media (max-width:950px){
+    body{
+    background-color:gold;
+}
+}
+
+@media (max-width:768px){
+    body{
+    background-color:indianred;
+}
+}
+@media (max-width:576px){
+    body{
+    background-color:lightseagreen;
+}
+}
