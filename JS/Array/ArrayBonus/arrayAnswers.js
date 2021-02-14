@@ -14,63 +14,6 @@ const band = {
   },
 };
 
-const transformBand = (input) => {
-  let all = [];
-  let vocals = [];
-  let synth = [];
-  let guitar = [];
-  let bass = [];
-  let drums = [];
-  input.members.current.forEach((element) => {
-    let lowerCaseName = element.name.toLowerCase();
-    all.push(lowerCaseName);
-    if (element.plays.includes("vocals")) {
-      vocals.push(lowerCaseName);
-    }
-    if (element.plays.includes("synth")) {
-      synth.push(lowerCaseName);
-    }
-    if (element.plays.includes("guitar")) {
-      guitar.push(lowerCaseName);
-    }
-    if (element.plays.includes("bass")) {
-      bass.push(lowerCaseName);
-    }
-    if (element.plays.includes("drums")) {
-      drums.push(lowerCaseName);
-    }
-  });
-  input.members.past.forEach((element) => {
-    let lowerCaseName = element.name.toLowerCase();
-    all.push(lowerCaseName);
-    if (element.plays.includes("vocals")) {
-      vocals.push(lowerCaseName);
-    }
-    if (element.plays.includes("synth")) {
-      synth.push(lowerCaseName);
-    }
-    if (element.plays.includes("guitar")) {
-      guitar.push(lowerCaseName);
-    }
-    if (element.plays.includes("bass")) {
-      bass.push(lowerCaseName);
-    }
-    if (element.plays.includes("drums")) {
-      drums.push(lowerCaseName);
-    }
-  });
-  all.sort();
-  input.members.all = all;
-  input.plays = {};
-  input.plays.vocals = vocals;
-  input.plays.synth = synth;
-  input.plays.guitar = guitar;
-  input.plays.bass = bass;
-  input.plays.drums = drums;
-
-  return input;
-};
-console.table(transformBand(band).plays);
 
 const expected = {
   members: {
@@ -104,3 +47,65 @@ const expected = {
     drums: ["en"],
   },
 };
+
+
+
+
+
+const transformBand = (input) => {
+    let all = [];
+    let vocals = [];
+    let synth = [];
+    let guitar = [];
+    let bass = [];
+    let drums = [];
+    input.members.current.forEach((element) => {
+      let lowerCaseName = element.name.toLowerCase();
+      all.push(lowerCaseName);
+      if (element.plays.includes("vocals")) {
+        vocals.push(lowerCaseName);
+      }
+      if (element.plays.includes("synth")) {
+        synth.push(lowerCaseName);
+      }
+      if (element.plays.includes("guitar")) {
+        guitar.push(lowerCaseName);
+      }
+      if (element.plays.includes("bass")) {
+        bass.push(lowerCaseName);
+      }
+      if (element.plays.includes("drums")) {
+        drums.push(lowerCaseName);
+      }
+    });
+    input.members.past.forEach((element) => {
+      let lowerCaseName = element.name.toLowerCase();
+      all.push(lowerCaseName);
+      if (element.plays.includes("vocals")) {
+        vocals.push(lowerCaseName);
+      }
+      if (element.plays.includes("synth")) {
+        synth.push(lowerCaseName);
+      }
+      if (element.plays.includes("guitar")) {
+        guitar.push(lowerCaseName);
+      }
+      if (element.plays.includes("bass")) {
+        bass.push(lowerCaseName);
+      }
+      if (element.plays.includes("drums")) {
+        drums.push(lowerCaseName);
+      }
+    });
+    all.sort();
+    input.members.all = all;
+    input.plays = {};
+    input.plays.vocals = vocals;
+    input.plays.synth = synth;
+    input.plays.guitar = guitar;
+    input.plays.bass = bass;
+    input.plays.drums = drums;
+  
+    return input;
+  };
+  console.table(transformBand(band).plays);
