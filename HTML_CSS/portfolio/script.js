@@ -1,16 +1,17 @@
-window.onscroll = function() {scrollFunction()};
+let header = document.getElementById("main-nav");
 
-function scrollFunction() {
-    const header = document.getElementsByName("header");
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    header.style.backgroundColor ="#f1f1f1";
+const scrollHeader = () =>{
+  if(
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ){
+    header.style.fontSize = "30px";
     header.style.padding ="10px";
-  
-  } else {
-    header.style.background ="#transparent";
-    header.style.fontSize = "60px";
-
+  }else{
+    header.style.fontSize ="60px";
+    header.style.padding ="10px";
   }
-  
-}
+};
+
+window.addEventListener("scroll",scrollHeader);
 

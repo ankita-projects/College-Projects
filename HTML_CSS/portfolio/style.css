@@ -19,26 +19,36 @@ li{
   display: inline-block;
   padding: 1rem;
 }
-header{
-  background-color: rgb(7, 7, 8);
-  padding: 1rem;
+#main_nav{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top:0;
+  padding: 42px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  margin-right: 20px;
+}
+.container{
   display: flex;
   justify-content: space-between;
-  
+  margin:10px;
 }
 section{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-evenly;
 
 }
 .box{
   background-color: rgb(247, 203, 109);
   width: 20%;
+  height: 5%;
   margin: 1rem;
    box-shadow: 0px 0px 5px rgb(88, 87, 87);
-}
+     
+  }
 
 #hero-banner{
   display: flex;
@@ -76,15 +86,16 @@ section{
 }
 
 p {
-  margin: 16px 0;
+  margin: 10px 0;
   line-height: 1;
   margin-bottom: 200px;
   line-height: 1.2;
+
 }
-.container{
+.container1{
   padding: 10px;
   display: inline;
-  background-color: rgb(141, 140, 140);
+
 }
 .footer {
   position: fixed;
