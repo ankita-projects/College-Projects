@@ -8,20 +8,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+         <div class="display">
+      <div class="logo">
+        <img src="/logo.png" alt="logo">
+      </div>
+      </div>
+      <h1>Work day counter</h1>
+      </header>
       <form id="form">
       <div class="container">
-      <label for="date">Enter date</label>
+      <label for="date">Enter event date </label>
       <input type="date" id="date"  ><br>
       </div>
+      <div class ="container1">
+        <label for="time">Enter start time</label>
+        <input type="time">
+      </div>
       <div class="event">
-      <label for="event">Enter event name</label>
+      <label for="event">Enter event name </label>
       <input type="event" id="eventName">
-      <button id="button">Submit</button>
     </div>
-  </div>
+    </div>
     </form>
+    <button id="button">Submit</button>
     <p></p>
-
+    <p id =text1></p>
     <script src="script.js"></script>
   </body>
 </html>
