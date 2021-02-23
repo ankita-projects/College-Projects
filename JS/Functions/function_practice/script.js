@@ -1,13 +1,13 @@
-/**
- * ********** PART ONE **********
- * 1.Create an index.html, and include a script.js upon pageload
+/*
+  PART ONE 
+  1.Create an index.html, and include a script.js upon pageload
  * 2.Content of the script.js should be wrapped within a self-executed anonymous function to avoid polluting the page global scope
  * 3.Add to the index.html a table element with 3 columns and 2 rows, first row is the header row that contains the table headings (studentNo, name, age), second row contains your own studentNo, name, and age
  * 4.Create a function name executeScript. Function executeScript should add a new row to the table that contains a test user studentNo, name, and age (maybe 123, test user name, 999) when called. Remember to invoke executeScript function
  * 5.Move the script.js injection to the header part of your index.html, is your code still working?
  * 6.Update your code so that executeScript only gets invoked when the DOMContentLoaded event is detected. Is the testUser now getting added to the table? Why?
  * >>>>> The HTML document is loaded from top to bottom. If the script is loaded before the HTML document, the script will not be able to find the table element which is why executeScript needs to happen after the DOMContentLoaded.
- * ********** PART TWO **********
+ PART TWO 
  * Copy the following function which will always return an array of 5 objects containing information of 5 test users to your code, add more if you wanthttps://gist.github.com/bch-fullstack/7bdc2288e1a1b5c6da0cf1674477eed3
  * 2.Create a new function addUser that expects a single object of userInfo as parameter
  * 3.Iterate through the array of 5 users, call addUser on each iteration
@@ -18,125 +18,81 @@
 
 (function () {
     const executeScript = () => {
-      // Find table element with id "table"
       let table = document.getElementById("table");
-      // Create a new <tr> element
-      let row = table.insertRow();
-      // Create new <td> elements
-      let colStudentNo = row.insertCell();
-      let colName = row.insertCell();
-      let colAge = row.insertCell();
-      let colIsStaff = row.insertCell();
-      // Add values inside the <td> elements
-      colStudentNo.textContent = 44;
-      colName.textContent = "Cedric";
-      colAge.textContent = 17;
-      colIsStaff.textContent = "No";
-  
-      /**
-       * Add a new row to the table with userInfo
-       * @param {Object} obj a single object of userInfo
-       * @return {void}
-       */
+      let row = table.insertRow();               // Create <tr> element
+      let StudentNo = row.insertCell();          // Create <td> elements
+      let Name = row.insertCell();
+      let Age = row.insertCell();
+      let Staff = row.insertCell();
+      StudentNo.textContent = 44;                // Adding values inside the <td> elements
+      Name.textContent = "John";
+      Age.textContent = 20;
+      Staff.textContent = "No";
+       
       const addUser = (obj) => {
-        // Find table element with id "table"
-        let table = document.getElementById("table");
-        // Create a new <tr> element
-        let row = table.insertRow();
-        // Create new <td> elements
-        let colStudentNo = row.insertCell();
-        let colName = row.insertCell();
-        let colAge = row.insertCell();
-        let colIsStaff = row.insertCell();
-        // Add values inside the <td> elements
-        colStudentNo.textContent = obj.studentNo;
-        colName.textContent = obj.name;
-        colAge.textContent = obj.age;
-        // If studentNo is non-negative it is a student, otherwise it is a staff
-        colIsStaff.textContent = obj.studentNo > 0 ? "No" : "Yes";
+        let table = document.getElementById("table");  
+        let row = table.insertRow();            // Create a new <tr> element
+        let StudentNo = row.insertCell();     // Create new <td> elements
+        let Name = row.insertCell();
+        let Age = row.insertCell();
+        let Staff = row.insertCell();
+        StudentNo.textContent = obj.studentNo;   // Adding values inside the <td> elements
+        Name.textContent = obj.name;
+        Age.textContent = obj.age;
+        Staff.textContent = obj.studentNo > 0 ? "No" : "Yes";   // If studentno>0 its a student otherwise staff
       };
-  
-      // Get array of user objects
-      let users = getUsers();
-  
-      // Iterate through the array of 5 users, call addUser on each iteration
-      users.forEach((user) => addUser(user));
-  
-      /**
-       * Iterate through an array of objects, and return the oldest person in the array according to the age
-       * @param {Array} arr array of userObject
-       * @return {Object} oldest person object
-       */
-      const getOldest = (arr) => {
-        // Track index of oldest
-        let indexOfOldest = 0;
-        // Iterate through array and compare person age
-        for (let i = 1; i < arr.length; i++) {
+        let users = inputUsers();
+         users.forEach((user) => addUser(user));   //Iterate through the array users, call addUser on each iteration
+          const getOldest = (arr) => {               
+          let indexOfOldest = 0;
+          for (let i = 1; i < arr.length; i++) {      // Iterate through array and compare person age
           arr[i].age > arr[indexOfOldest].age
-            ? // If current person is older, save index
+            ?                                        // If current person is older, save index
               (indexOfOldest = i)
             : "";
         }
         return arr[indexOfOldest];
       };
-  
-      /**
-       * Sort users according to age descendingly using insertionSort and re-render the table with sorted content
-       *  @return {void}
-       */
-      const sortTable = () => {
-        // Make a copy of users array
-        let sortedUsers = getUsers();
-        // Add missing users
-        let newUsers = [
+        const sortTable = () => {                        // Sort users according to age descendingly 
+              
+        let sortedUsers = inputUsers();             
+        let newUsers = [                              
           {
-            studentNo: 666,
-            name: "Draco",
-            age: 15,
+            studentNo: 684,
+            name: "Gem",
+            age: 16,
           },
           {
-            studentNo: 44,
-            name: "Cedric",
-            age: 17,
+            studentNo: 36,
+            name: "Jhon",
+            age: 18,
           },
         ];
-        sortedUsers = sortedUsers.concat(newUsers);
-        // The outer loop starts at the second user in the array, and travels through the end of the array
+        sortedUsers = sortedUsers.concat(newUsers); 
         for (let i = 1; i < sortedUsers.length; i++) {
-          //The inner loop begins at the start of the array, and travels only up to the user being iterated over in the outer loop
-          for (let j = 0; j < i; j++) {
+                 for (let j = 0; j < i; j++) {
             if (sortedUsers[i].age > sortedUsers[j].age) {
-              // Splice to delete and return the item at "i" position
-              const [user] = sortedUsers.splice(i, 1);
-              // Splice again to insert the item at the "j" position
-              sortedUsers.splice(j, 0, user);
+                          const [user] = sortedUsers.splice(i, 1);
+                            sortedUsers.splice(j, 0, user);
             }
           }
         }
+          console.table(sortedUsers);
   
-        console.log(sortedUsers);
-  
-        // Clears table
-        while (table.rows.length > 1) {
+            while (table.rows.length > 1) {
           table.deleteRow(table.rows.length - 1);
         }
-  
-        // Render sorted table
         sortedUsers.forEach((user) => addUser(user));
       };
-  
-      let buttonSort = document.getElementById("button-sort");
-  
+      let buttonSort = document.getElementById("sort");
       buttonSort.addEventListener("click", sortTable);
     };
   
     window.addEventListener("DOMContentLoaded", (event) => {
       executeScript();
     });
-  
-    // Provided function from https://gist.github.com/bch-fullstack/7bdc2288e1a1b5c6da0cf1674477eed3
-  
-    const getUsers = () => [
+      // function from https://gist.github.com/bch-fullstack/7bdc2288e1a1b5c6da0cf1674477eed3
+      const inputUsers = () => [
       {
         studentNo: 123,
         name: "Harry",

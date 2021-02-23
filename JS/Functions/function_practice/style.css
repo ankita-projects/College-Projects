@@ -1,0 +1,11 @@
+table, th, td {
+    border: 1px solid black;
+    margin:20px;
+  }
+ 
+  .button{
+      padding: 5px;
+      margin:20px;
+     
+      }
+ 
