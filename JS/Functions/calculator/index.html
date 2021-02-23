@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <div class="display">
+            <div class="input" id="display" ></div>
+         </div>
+       <div class="keypad">
+        <button class="cal-button is-clear" value="C"  onclick="clearDisplay()">C</button>
+        <button class="cal-button" value="÷" onclick="putDisplay(event)">÷</button>
+      
+        <button class="cal-button" value="7" onclick="putDisplay(event)">7</button>
+        <button class="cal-button" value="8" onclick="putDisplay(event)">8</button>
+        <button class="cal-button" value="9" onclick="putDisplay(event)">9</button>
+        <button class="cal-button" value="×" onclick="putDisplay(event)">×</button>
+      
+        <button class="cal-button" value="4" onclick="putDisplay(event)">4</button>
+        <button class="cal-button" value="5" onclick="putDisplay(event)">5</button>
+        <button class="cal-button" value="6" onclick="putDisplay(event)">6</button>
+        <button class="cal-button" value="-"onclick="putDisplay(event)">−</button>
+      
+        <button class="cal-button" value="1" onclick="putDisplay(event)">1</button>
+        <button class="cal-button" value="2" onclick="putDisplay(event)">2</button>
+        <button class="cal-button" value="3"onclick="putDisplay(event)">3</button>
+        <button class="cal-button" value="+" onclick="putDisplay(event)">&plus;</button>
+      
+        <button class="cal-button" value="0" onclick="putDisplay(event)">0</button>
+        <button class="cal-button is-zero" value="=" onclick="calculate()">&equals;</button>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
