@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   font-family: League Spartan;
+   background-color: black;
+   background: #030305 url("https://source.unsplash.com/YpVOQir8dIY") no-repeat
+   fixed center center/ cover;
+   color: #f0eeee;
+}
+h1{
+    color:   #8eeef7;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 0.3ch;
+    margin: 0.7rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #05060a00;
+    width: 100%;
+    position: fixed;
+    padding: 2.5vh;
+    z-index: 2;
+  }
+  header li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 1rem;
+  }
+  header li a {
+    color: #8eeef7;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .logo-link {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  footer h2,
+  .hero-banner h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #8eeef7;
+    font-weight: 400;
+    text-transform: capitalize;
+    z-index: 1;
+  }
+  
+  main h2 {
+    padding-bottom: 1rem;
+    letter-spacing: 0.25ch;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #abc7d9;
+  }
+  
+  p {
+    line-height: 150%;
+    font-size: 1.2rem;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-bottom: 35px solid #33eeffa8;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+  .back-to-top:hover {
+    border-bottom: 35px solid #33eeff;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  section {
+    padding: 5rem 0;
+    width: 100%;
+  }
+  
+  section:nth-child(even) {
+    background-color: #838485;
+  }
+  
+  .container1{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-banner::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #14213d50;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .card {
+    width: 32%;
+    background-color: #0a101f;
+    position: relative;
+  }
+  .card-content {
+    padding: 0.6rem 1rem;
+  }
+   h3 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .card a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .card p {
+    color:  #8eeef7;;
+    font-weight: 700;
+  }
+  
+  .float-left {
+    float: left;
+    margin-right: 1.8rem;
+    width: 50%;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #ebffab;
+    height: 11%;
+    display: contents;
+  }
+  .form {
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    line-height: 2;
+    padding: 1.5rem;
+    
+  }
+
+  form label {
+    color: #d4d6db;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  button {
+    background-color: #68e4f0;
+    color: #14213d;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px #aaa;
+    cursor: pointer;
+  }
+
+  
+    @media (max-width: 768px) {
+    header {
+      display: block;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .card:hover {
+      top: 0;
+    }
+  
+    progress[value] {
+      flex: 4;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .back-to-top {
+      display: none;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    header li {
+      margin: 0 0.5rem;
+    }
+  
+    footer h2 {
+      font-size: 2rem;
+    }
+  
+    form {
+      width: 90vw;
+    }
+  
+    .contact-info {
+      width: 100%;
+    }
+  
+    .float-left {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .float-right {
+      margin: 1rem 0;
+      width: 100%;
+    }
+
+  }
+ 
