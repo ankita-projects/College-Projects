@@ -1,14 +1,14 @@
-window.addEventListener("DOMContentLoaded", () => {   //creating self executed anonymous function.
-  let table = document.createElement("table");          // creating table .
+window.addEventListener("DOMContentLoaded", () => {
+  let table = document.createElement("table");
   table.setAttribute("id", "table");
   let row1 = document.createElement("tr");
   let col1 = document.createElement("th");
   let col2 = document.createElement("th");
   let col3 = document.createElement("th");
   let col4 = document.createElement("th");
-  col1.innerHTML = "StudentNo.";
-  col2.innerHTML = "Name";
-  col3.innerHTML = "Age";
+  col1.innerHTML = "studentNo.";
+  col2.innerHTML = "name";
+  col3.innerHTML = "age";
   col4.innerHTML = "isStaff";
   row1.appendChild(col1);
   row1.appendChild(col2);
@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {   //creating self executed a
   document.getElementById("root").appendChild(table);
 
   const executeScript = (studentNo, Name, Age, isStaff) => {
-    let row1 = document.createElement("tr");                      // adding rows in table
+    let row1 = document.createElement("tr");
     let col1 = document.createElement("td");
     let col2 = document.createElement("td");
     let col3 = document.createElement("td");
@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {   //creating self executed a
     document.getElementById("table").appendChild(row1);
   };
 
-  const getUsers = () => [                          // getUser array 
+  const getUsers = () => [
     {
       studentNo: 123,
       name: "harry",
