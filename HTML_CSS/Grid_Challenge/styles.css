@@ -1,65 +1,69 @@
-.main{
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(8,1fr);
-    gap: 0.4rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0.5rem;
     height: 100vh;
-}
-.box1{    background-color: yellow;
-           grid-area: 1 / 1 / 2 / 7;
-}
-.box2{
-       background-color: pink;
-       grid-area: 1/7/2/9;
-}
-.box3 {
+  }
+  
+  .site-title {
+    background-color: yellow;
+    grid-area: 1 / 1 / 2 / 7;
+  }
+  
+  .nav {
     background-color: pink;
+  }
+  
+  .nav-item-1 {
+    grid-area: 1 / 7 / 2 / 9;
+  }
+  .nav-item-2 {
     grid-area: 1 /9 / 2 / 11;
   }
-  .box4 {
-    background-color: pink;
+  .nav-item-3 {
     grid-area: 1 / 11 / 2 / 13;
   }
   
-  .box5 {
+  .post-title {
     background-color: steelblue;
     grid-area: 2 / 1 / 3 / 10;
   }
   
-  .box6 {
+  .post-meta {
     background-color: lightgreen;
     grid-area: 3 / 1 / 8 / 3;
   }
   
-  .box7 {
+  .content {
     background-color: lightsteelblue;
     grid-area: 3 / 3 / 5 / 10;
   }
   
-  .box8 {
+  .image {
     background-color: lightyellow;
     grid-area: 5 / 3 / 8 / 10;
   }
   
-  .box9 {
+  .sidebar {
     background-color: gold;
     grid-area: 2 / 10 / 4 / 13;
   }
-  .box10 {
+  .ads {
     background-color: green;
     grid-area: 4 / 10 / 6 / 13;
   }
   
-  .box11 {
+  .other {
     background-color: violet;
     grid-area: 6 / 10 / 8 / 13;
   }
   
-  .box12 {
+  .footer {
     background-color: brown;
     grid-area: 8 / 1 / 9 / 13;
   }
-
+  
   @media (max-width: 576px) {
     .post-meta {
       background-color: lightgreen;
