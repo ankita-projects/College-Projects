@@ -80,8 +80,8 @@ var holidayList = [
 submit = (event) => {
   event.preventDefault();
 
-  let date1 = new Date(document.getElementById("date").value);
-  let date2 = new Date();
+  let date1 = new Date(document.getElementById("date1").value);
+  let date2 = new Date(document.getElementById("date").value);
   let Difference_In_Time = date1.getTime() - date2.getTime();
   let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
   let daysLeft = Math.trunc(Difference_In_Days);
@@ -153,7 +153,7 @@ getBankHolidaysExceptWeekend = (year) => {
 
 // setInterval after every second
 let timer = setInterval(() => {
-  let date1 = new Date(document.getElementById("date").value);
+  let date1 = new Date(document.getElementById("date1").value);
   // new time/date
   let update = new Date();
   //the new difference
