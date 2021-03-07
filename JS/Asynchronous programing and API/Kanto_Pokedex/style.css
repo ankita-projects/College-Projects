@@ -1,6 +1,6 @@
 body{
 
-    background-image: linear-gradient(to right,#4b2d29,#380d2a);
+    background-image: linear-gradient(to right,#f16a58,#e28317);
     font-family: roboto;
     font-size: 25px;
     background-repeat: no-repeat;
@@ -13,5 +13,29 @@ body{
 h1{
     font-family: 'Press Start 2P', cursive;
 }
-
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  a {
+    padding-left: 50px;
+    text-transform: uppercase;
+  }
+  
+  #root{
+    background-color: rgb(218, 227, 230);
+    height: 500px;
+    width: 1200px;
+    overflow-y: scroll;
+  }
+  li{
+  list-style-type:none;
+  }
+  section {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #eee;
+  }
 

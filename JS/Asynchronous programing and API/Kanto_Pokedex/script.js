@@ -50,6 +50,7 @@ const showPokeDetails=(data)=>{
     let name =document.createElement("label");
     let image=document.createElement("img");
     image.setAttribute("src",data.sprites.front_default);
+    
     card.appendChild(name);
     card.appendChild(image);
 }
