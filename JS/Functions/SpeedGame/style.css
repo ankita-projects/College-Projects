@@ -1,0 +1,27 @@
+body{
+
+    background-image: linear-gradient(to right,#dff79e,#cee07c);
+    font-family: roboto;
+    font-size: 25px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+.heading{
+    color: black;
+    text-align: center;
+    font-style: roboto;
+  }
+  p{
+      color: black;
+  }
+  .dot{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(236, 235, 235);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1rem;
+  }

@@ -94,7 +94,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const sortTable = () => {
     const table = document.getElementById("table");
-
     while (table.childNodes.length > 1) {        //for removing rows of table except header
       table.removeChild(table.lastChild);
     }
