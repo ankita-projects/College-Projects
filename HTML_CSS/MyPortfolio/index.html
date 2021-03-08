@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header">
+    <header>
+      <div class="navbar">
+        <div class="container">
         <div class="logo">
-          <a class="logo-link" href="#top"><h1 id="logo">Ankita Bhatnagar</h1></a>
+          <div class="logo"><a href="./index.html">Ankita Bhatnagar</a></div>
         </div>
         <nav>
+          <button id="mobileButton">
+            <span class="material-icons"> menu </span>
+          </button>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#experience">Experience</a></li>
+            <li><a href="./index.html#skills">Skills</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
+      </div>
+    </div>
+    <section id="hero-banner">
+      <h2>Aspiring Software Developer</h2>
+    </section>
       </header>
 
       <main>
-        <section id="top" class="hero-banner">
-          <h2>Aspiring Software Developer</h2>
-        </section>
-        <section id="home">
+        
+        <section id="work">
           <div class="container">
-            <h2>Introduction</h2>
+            <h2>Work</h2>
             <div class="cards-container">
               <div class="card"><a href="#">
                 <img
@@ -84,7 +97,7 @@
             </p>
           </div>
         </section>
-        <section id="experience">
+        <section id="skills">
             <div class="container">
               <h2>Certifications</h2>
               <img
@@ -100,20 +113,30 @@
             </div>
           </section>
       </main>
-      <div class="footer">
-        <div class="form">
+      <footer id="footer">
+        <div class="container">
+          <h2>Contact me</h2>
           <form>
-            <h1 id="contact">Contact Us</h1>
-            <label>Name</label>
-            <input type="text" class="Name" />
-            <label>Email</label>
-            <input type="text" class="Name" />
-            <label>Text Here</label>
-            <input type="text" class="Name" /><br>
-             <button>Submit</button>
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message to me</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <button type="submit">Send message</button>
           </form>
+         
         </div>
-      </div>
+        <button id="backToTop">
+          Top<span class="material-icons"> arrow_upward </span>
+        </button>
+      </footer>
       <script src="script.js"></script>
 </body>
 </html>
