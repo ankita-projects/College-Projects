@@ -5,22 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="heading">
-      <h1>Speedgame</h1>
-    </div>
-    <p id="score">Your Score 0</p>
-    <div id="bulb">
-    <span class="dot" id="bulb1" ></span>
-    <span class="dot" id="bulb2"></span>
-    <span class="dot" id="bulb3"></span>
-    <span class="dot" id="bulb4"></span>
-    </div>
-    <button id="start">Start Game</button>
-    <button id="stop">Stop Game</button>
-
+    <section id="audio"></section>
+    <section>
+      <div class="heading">
+        <h1>Speedgame</h1>
+      </div>
+      <div class="gamearea">
+        <h2 id="score"></h2>
+        <div class="bulb" id="bulb1"></div>
+        <div class="bulb" id="bulb2"></div>
+        <div class="bulb" id="bulb3"></div>
+        <div class="bulb" id="bulb4"></div>
+      </div>
+      <button id="start">Start Game</button>
+      <button id="stop" onclick="endGame()">Stop Game</button>
+    </section>
+    <section id="gameResult">
+      <div class="gameOver">
+        <p>Oops game over!!!</p>
+        <p id="displayScore"></p>
+        <button type="button" id="close">Close</button>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

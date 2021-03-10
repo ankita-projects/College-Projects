@@ -1,27 +1,85 @@
-body{
-
-    background-image: linear-gradient(to right,#dff79e,#cee07c);
-    font-family: roboto;
-    font-size: 25px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    text-align: center;
-    height: 100%;
+body {
+  background-image: linear-gradient(to right, #dff79e, #cee07c);
+  font-family: roboto;
+  font-size: 25px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  height: 100%;
 }
-.heading{
-    color: black;
-    text-align: center;
-    font-style: roboto;
-  }
-  p{
-      color: black;
-  }
-  .dot{
-    height: 40px;
-    width: 40px;
-    background-color: rgb(236, 235, 235);
-    border-radius: 50%;
-    display: inline-block;
-    margin: 1rem;
-  }
+.heading {
+  color: rgb(224, 31, 31);
+  text-shadow:-5px 0 #080807, 0 5px #070706, 5px 0#0a0a09, 0 -5px#070705;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+#score {
+  color: black;
+  font-family: "Press Start 2P", cursive;
+}
+.gamearea{
+  margin: 100px auto;
+  width: 80%;
+  text-align: center;
+}
+.bulb {
+ 
+  height: 100px;
+  width: 100px;
+  color: white;
+  box-shadow: 0 0 3px 5px #333;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1rem;
+  box-shadow: black;
+}
+img{
+  height: 100px;
+  width: 100px;
+}
+
+button {
+  font-family:"Press Start 2P", cursive;
+  background-color:rgb(252, 225, 215);
+  font-size: 20px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+#gameResult{
+  visibility: hidden;
+  position: fixed;
+  top:0;
+  left:0;
+   width: 100%;
+  height: 100%;
+  color: rgba(7, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameOver{
+  background-color: rgb(239, 245, 245);
+  padding: 100px 0 0 0;
+  width: 40%;
+  height:20%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  font-family: "Press Start 2P", cursive;
+}
+
+.gameover button {
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  outline: none;
+}
+
+#displayScore {
+  font-size: 24px;
+  color: #333;
+}
