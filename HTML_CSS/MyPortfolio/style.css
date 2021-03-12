@@ -43,10 +43,10 @@ header {
   align-items: center;
   z-index: 100;
 }
-.navbar .container {
+.container {
   position: relative;
   padding: 1rem;
-  width: 100%;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +118,7 @@ img {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
