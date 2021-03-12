@@ -1,10 +1,10 @@
 body {
-  background-image: linear-gradient(to right, #dff79e, #cee07c);
-  font-family: roboto;
+  background-image: linear-gradient(to right, #cbf588, #e0a97c);
+  font-family:"Press Start 2P", cursive;
   font-size: 25px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
+  color: rgb(7, 7, 7);
   text-align: center;
   height: 100%;
 }
@@ -13,6 +13,24 @@ body {
   text-shadow:-5px 0 #080807, 0 5px #070706, 5px 0#0a0a09, 0 -5px#070705;
   text-align: center;
   font-family: "Press Start 2P", cursive;
+  font-size: 40px;
+}
+.playerName{
+  background-color:#da5656;
+  padding: 50px 0 0 0;
+  margin:1rem 4rem 1rem 30rem;
+  width: 50%;
+  height:20%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Press Start 2P", cursive;
+  z-index: 100;
+}
+#Name{
+  padding: 1rem;
+  border-style: solid;
+  width: 40%;
 }
 #score {
   color: black;
@@ -24,8 +42,7 @@ body {
   text-align: center;
 }
 .bulb {
- 
-  height: 100px;
+   height: 100px;
   width: 100px;
   color: white;
   box-shadow: 0 0 3px 5px #333;
@@ -41,7 +58,7 @@ img{
 
 button {
   font-family:"Press Start 2P", cursive;
-  background-color:rgb(252, 225, 215);
+  background-color:#e0c0d1;
   font-size: 20px;
   padding: 1rem;
   margin: 0 auto;
