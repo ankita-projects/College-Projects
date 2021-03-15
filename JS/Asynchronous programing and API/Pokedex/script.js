@@ -105,4 +105,3 @@ const createTable = (data) => {                  //creating table
   document.getElementById("myTr3").appendChild(pokeID);
   document.getElementById("pokemonDetails").appendChild(x);
 };
-base_experience

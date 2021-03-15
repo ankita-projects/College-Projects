@@ -1,0 +1,34 @@
+body{
+    background-image: url("images/image.png");
+    text-align: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+}
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.city{
+    padding: 15px;
+}
+button{
+    padding: 12px;
+    font-size: large;
+    margin: 2rem;
+    background-color: rgb(245, 244, 247);
+    color: black;
+}
+tr{
+    font-size: x-large;
+}
+.table{
+    margin-left: auto ;
+    margin-right: auto;
+}
