@@ -1,5 +1,5 @@
 class Car{
-     Car(licencePlate,carMaker,carModel,price,color,){
+     constructor(licencePlate,carMaker,carModel,price,color){
        this.licencePlate=licencePlate;
        this.carMaker=carMaker;
        this.carModel=carModel;
