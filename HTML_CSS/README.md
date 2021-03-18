@@ -1,5 +1,6 @@
 # HTML_CSS-Projects
-This repository contains HTML CSS assignments I made for Helsinki Buisness College Full Stack Developer Program.
+
+- This repository contains HTML CSS assignments I made for Helsinki Buisness College Full Stack Developer Program.
 
 # Technologies used
 
@@ -21,7 +22,6 @@ This repository contains HTML CSS assignments I made for Helsinki Buisness Colle
  - [LinkedIn](https://www.linkedin.com/in/ankita-bhatnagar-b9101b21/)
 
 - Margit Tennosaar
-
 - [GitHub](https://github.com/margittennosaar)
 - [LinkedIn](https://www.linkedin.com/in/margittennosaar/)
 
