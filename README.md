@@ -1,7 +1,16 @@
 # College-Projects
+
 It contains all the projects and assignments from Helsinki Buisness College Full Stack Developer Program.
 
-# Technologies used 
+# Technologies used
+
 -HTML
 -CSS
 -JAVASCRIPT
+
+# Setup and usage
+
+-I built live page for How many days left until....?, its a countdown timer & a date counter.
+-Live page for weather monitoring app, it ask city name and shows current temprature and weather in a form of table , I also used switch cases to change background images according to the weather reported by weather API.
+-Live page for pokedex, this project shows a list of pokemon names that are retrived from the pokeAPI and user can click on any name in the list and that happens we call pokeAPI again to get details of those names. 
+-Live page for speed game, its a speed game that will check the reponse time of the players, how quickly they click when the bird appears,after catching five birds the speed of birds appearing increases. 
