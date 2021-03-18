@@ -24,11 +24,10 @@ This repository contains javascript projects and assignments I made for Helsinki
 
 # Author and acknowlegement
  - Ankita Bhatnagar
- - [GitHub]ankita-projects
+ - [GitHub](ankita-projects)
  - [LinkedIn](https://www.linkedin.com/in/ankita-bhatnagar-b9101b21/)
 
 - Margit Tennosaar
-
 - [GitHub](https://github.com/margittennosaar)
 - [LinkedIn](https://www.linkedin.com/in/margittennosaar/)
 
