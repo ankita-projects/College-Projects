@@ -1,15 +1,12 @@
 # College-Projects
-
-It contains all the projects and assignments from Helsinki Buisness College Full Stack Developer Program.
+This repository contains projects and assignments I made for Helsinki Buisness College Full Stack Developer Program.
 
 # Technologies used
-
 -HTML
 -CSS
 -JAVASCRIPT
 
 # Setup and usage
-
 -I built live page for How many days left until....?, its a countdown timer & a date counter.
  # https://ankita-projects.github.io/howMuchTime/index.html
 -Live page for weather monitoring app, it ask city name and shows current temprature and weather in a form of table , I also used switch cases to change background images according to the weather reported by weather API.
