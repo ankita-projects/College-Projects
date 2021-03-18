@@ -1,4 +1,3 @@
-let leaderBoard = new Map();
 let currentPlayer = "";
 let welcomeUser = document.getElementById("welcomeUser");
 let scoredisplay = document.querySelector("#score");
@@ -18,7 +17,7 @@ const playAudio = (source, loop) => {
   audio.autoplay = true;
   audio.loop = loop;
 };
-let speed = 1000;
+let speed = 1500;
 let movingCircles = () => {
   //for keep changing the bulbs in every 1 sec
   document.querySelectorAll(".bulb").forEach((element) => {
@@ -30,16 +29,16 @@ let movingCircles = () => {
     .getElementById("bulb" + d)
     .style.setProperty("content", "url(./image.png)");
   birdCount++;
-  if(hitCount>=5){
-    speed=500;
-    intervalId = setInterval(movingCircles,speed);
+  if (hitCount >= 5) {
+    speed = 1000;
+    intervalId = setInterval(movingCircles, speed);
   }
 
   if (birdCount > hitCount + 3) {
     // After missed three highlighted bulbs game ends
     endGame();
   }
-}
+};
 const startGame = () => {
   playAudio("sounds/bonus.wav", true); //playing audio wave file on start of game(true means looping)
   document.getElementById("stop").style.display = "block"; // make stop button visible
@@ -51,7 +50,6 @@ const startGame = () => {
     // adding eventlistner for each of the bulbs
     element.addEventListener("click", checkBird);
   });
-
 
   intervalId = setInterval(movingCircles, speed);
 };
@@ -77,9 +75,11 @@ const endGame = () => {
   clearTimeout(intervalId); // Stop timeout
   console.log("Game over");
   overlay.style.visibility = "visible"; // Make overlay visible
-  leaderBoard[currentPlayer] = hitCount;
-  console.table(leaderBoard);
   gameover.textContent = `Your score is ${hitCount} & You missed ${missCount} `; //Show score
+  document.querySelectorAll(".bulb").forEach((element) => {
+    // removing eventlistner for each of the bulbs
+    element.removeEventListener("click", checkBird);
+  });
 };
 
 const reload = () => {
