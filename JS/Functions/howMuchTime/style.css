@@ -29,6 +29,12 @@ h1{
     padding: 30px;
     margin: 5px 5px 5px 0;
 }
+.start{
+    margin: 1rem;
+}
+.end{
+    margin :1rem;
+}
 
 .container1{
     display: flex;
