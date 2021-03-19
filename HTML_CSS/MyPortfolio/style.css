@@ -256,6 +256,8 @@ section:nth-child(even) {
   margin-right: 1.8rem;
   width: 50%;
 }
+
+
  /**************** Footer area ****************/
   
  footer {
@@ -327,8 +329,8 @@ footer button {
   font-size: 1rem;
 }
 
-/*****Tablet Support*****/
-
+/**************** Tablet support ****************/
+  
 @media (max-width: 899px) {
   #mobileButton {
     display: block;
@@ -383,64 +385,53 @@ footer button {
   }
 }
 
-  @media (max-width: 768px) {
-  header {
+/**************** Mobile support ****************/
+@media (max-width: 576px) {
+  #mobileButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  #mobileButton .material-icons {
+    font-family:'Material Icons';
+    font-size: 2rem;
+  }
+  .main_nav {
     display: block;
   }
-
-  h1 {
-    font-size: 3rem;
+  header nav ul {
+    margin-top: 1rem;
+  }
+  header nav ul li {
+    padding: 1rem;
   }
 
-  .card {
+  #hero-banner h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+  }
+
+  #work,
+  #experience,
+  #skills {
+    padding: 1rem;
+  }
+  #work .work_boxes {
+    display: block;
+  }
+  #work .box {
     width: 100%;
     margin-bottom: 1rem;
   }
+  #experience img,
+  #skills img {
+    width: 100%;
 
-  .card:hover {
-    top: 0;
+    float: none;
+    margin: 0;
   }
-
-  progress[value] {
-    flex: 4;
+  footer form .form-group {
+    display: block;
   }
 }
-/************Mobile Support*************/
-
-@media (max-width: 576px) {
-  .back-to-top {
-    display: none;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  header li {
-    margin: 0 0.5rem;
-  }
-
-  footer h2 {
-    font-size: 2rem;
-  }
-
-  form {
-    width: 90vw;
-  }
-
-  .contact-info {
-    width: 100%;
-  }
-
-  .float-left {
-    width: 100%;
-    margin: 1rem 0;
-  }
-
-  .float-right {
-    margin: 1rem 0;
-    width: 100%;
-  }
-
-}
- 
