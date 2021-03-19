@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="main_nav">
+        <div class="container">
+          <div class="logo"><a href="./index.html">Ankita Bhatnagar</a></div>
+          <nav>
+            <button id="mobileButton">
+              <span class="material-icons"> menu </span>
+            </button>
+            <ul>
+              <li><a href="./index.html#work">Work</a></li>
+              <li><a href="./index.html#experience">Experience</a></li>
+              <li><a href="./index.html#skills">Skills</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./animation.html">Blog</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <section id="hero-banner">
+        <h2>Aspiring Software Developer</h2>
+      </section>
+    </header>
+    <main>
+      <section id="work">
+        <div class="container">
+          <h2>Work</h2>
+          <div class="work_boxes">
+            <div class="box">
+              <img
+              src="https://source.unsplash.com/-RBuQ2PK_L8/1600x900"/>
+              <h3>Introduction</h3>
+              <p> I am an engineer, I have done my Bachelors of engineering in Electronics
+                and Instrumentation from India. I have a work experience of more than 10 years.</p>
+            </div>
+            <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?car" alt="time" />
+              <h3>Lorem ipsum dolor sit</h3>
+              <a href="#">See more</a>
+            </div>
+            <div class="box">
+              <img
+                src="https://source.unsplash.com/1600x900/?plane"
+                alt="time"
+              />
+              <h3>Fullstack Developer in progress</h3>
+              <p>Currently studying fullstack development from Buisness College Helsinki. </p>
+              <a href="#">See more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <div class="container">
+          <h2>Experience</h2>
+          <img src="https://source.unsplash.com/1600x900/?fox" alt="fox" />
+
+          <p>
+            I worked with Reliance Industries LTD for 4 years, my job profile was
+                field and controlroom instrument's maintenance(pressure, flow, level detector,sensors,PLC etc), troubleshooting and commissioning
+                life cycle.
+                I was a lecturer teaching instrumentation engineering to bachelor’s degree
+                students. Instructed and guided students to perform lab experiments related to
+                instrumentation, guided students for their Bachelor thesis and was responsible for
+                its Evaluation.
+                I am assistant teacher in Finnish School. I am passionate about teaching and
+                believe that knowledge increases by sharing. I have more than 3 years of teaching 
+                experience with multicultural students.
+          </p>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills_group">
+            <div class="skill">
+              <i class="demo-icon icon-html5"></i>
+              <p>HTML5</p>
+              <progress value="95" max="100">32%</progress>
+            </div>
+            <div class="skill">
+              <i class="demo-icon icon-css3"></i>
+              <p>CSS3</p>
+              <progress value="80" max="100">32%</progress>
+            </div>
+            <div class="skill">
+              <i class="demo-icon icon-group"></i>
+              <p>Teaching</p>
+              <progress value="70" max="100">32%</progress>
+            </div>
+            <div class="skill">
+              <i class="demo-icon icon-award"></i>
+              <p>Couching</p>
+              <progress value="70" max="100">32%</progress>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <h2>Contact me</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message to me</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
+        <p class="copyright">Copyright &copy; My Website 2021</p>
+      </div>
+      <button id="backToTop">
+        Top<span class="material-icons"> arrow_upward </span>
+      </button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
