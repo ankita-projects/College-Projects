@@ -169,16 +169,13 @@
     text-align: center;
     margin-top: 5rem;
   }
-  
-  .skill:nth-child(odd) {
-    background-color: rgb(228, 228, 228);
-  }
-  
+   
   .skill {
     background-color: rgb(247, 247, 247);
     padding: 2rem;
     border: 1px solid rgb(222, 222, 222);
     box-shadow: 0px 0px 5px rgb(234, 234, 234);
+    font-family:  var(--font);
   }
   
   progress[value] {
@@ -195,7 +192,7 @@
   }
   
   progress[value]::-webkit-progress-value {
-    color: rgb(228, 130, 146);
+    color: rgb(224, 209, 211);
     border-radius: 2px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
   }
@@ -268,6 +265,8 @@
   /**************** Footer area ****************/
   
   footer {
+    font-family:  var(--font);
+    font-size: 25px;
     background-color: rgb(165, 170, 170);
     text-align: center;
     color: white;
