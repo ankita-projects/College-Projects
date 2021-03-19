@@ -91,6 +91,10 @@
     display: inline-block;
     padding: 0 1rem;
   }
+  header nav a:hover{
+    background-color:rgb(14, 13, 13);
+    font-size: 2rem;
+  }
   
   header a {
     text-decoration: none;  
@@ -126,6 +130,12 @@
     scroll-margin-top: 5rem;
   }
   
+  .box{
+    transition: all 0.2s ease-out;
+   }
+   .box:hover {
+    bottom: 10px;
+  }
   #work .work_boxes {
     display: flex;
     justify-content: space-between;
@@ -137,10 +147,11 @@
     padding: 1rem;
     border-radius: 2px;
     border: 1px solid #eee;
-  }
-  
+   }
+     
   #work .box:hover {
-    box-shadow: 0 0 25px #8a8a8a;
+    box-shadow: 0 0 25px #6ed9dd;
+    transition: all 0.2s ease-out;
   }
   
   #work .box h3 {
@@ -154,7 +165,8 @@
   }
   
   #experience {
-    background: rgb(230, 230, 230);
+    background: rgb(229, 236, 238);
+    font-size: 20px;
   }
   
   #skills img {
@@ -402,7 +414,7 @@
   
     #hero-banner h2 {
       font-size: 2rem;
-      color: #333;
+      color: rgb(107, 221, 224);
       text-align: center;
     }
   
