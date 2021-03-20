@@ -4,38 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
     <title>Animation</title>
+    <link rel="stylesheet" href="animation.css">
 </head>
 <body>
-    <div class="container">
-        <div class="top-section">
-            <h1>My Timeline</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo accusantium, quisquam magnam doloribus, assumenda temporibus illum omnis explicabo dolorem perferendis eaque nisi libero blanditiis iste itaque in cum? Explicabo, ratione?</p>
-        </div>
-        <div class="timeline">
-            <div class="line"></div>
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nam possimus totam? Soluta impedit dolore omnis magnam sed voluptates, labore maxime, expedita nisi quia amet. Neque nihil dolor consequuntur impedit!</p>
-                </div>
+    <div class="history-tl-container">
+      <ul class="tl">
+        <li class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp">
+           2 June 2006
+          </div>
+          <div class="item-title">BTech </div>
+          <div class="item-detail">Bachelors of engineering in Instrumentation & Control completed.</div>
+        </li>
+        <li class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp">
+           7 July 2006
+          </div>
+          <div class="item-title">Lecturer</div>
+          <div class="item-detail">Started working as lecturer in engineering college,Indore</div>
+        </li>
+        <li class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp">
+           8 July 2008<br> 7:00 PM
+          </div>
+          <div class="item-title">Instrumentation Engineer</div>
+          <div class="item-detail">Worked as Instrumentation engineer in Reliance Industries Limited. </div>
+        </li>
+        <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp">
+              26 June 2010
+           </div>
+            <div class="item-title">Manager</div>
+            <div class="item-detail">Promoted as Instrumentation Manager of MEG plant.</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp">
+              15 April 2015
             </div>
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nam possimus totam? Soluta impedit dolore omnis magnam sed voluptates, labore maxime, expedita nisi quia amet. Neque nihil dolor consequuntur impedit!</p>
-                </div>
+            <div class="item-title">Finnish Language</div>
+            <div class="item-detail">Started learing Finnish langauge, as a part of integration program.</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp">
+              2 April 2016
             </div>
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nam possimus totam? Soluta impedit dolore omnis magnam sed voluptates, labore maxime, expedita nisi quia amet. Neque nihil dolor consequuntur impedit!</p>
-                </div>
+            <div class="item-title">Finnish Language proficiency test</div>
+            <div class="item-detail">Successfully completed YKI test.</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp">
+              15 Aug 2016
             </div>
-        </div>
+            <div class="item-title">Pedagogical Studies</div>
+            <div class="item-detail">Started studying assistant teacher .</div>
+          </li>
+    
+      </ul>
+    
     </div>
 </body>
 </html>
