@@ -11,6 +11,7 @@
 # Setup and usage
 
 - I built live page for My portfolio project.
+# https://ankita-projects.github.io/MyPortfolio/index.html
 
 # Sources 
 - GitHub Guides- masterin markdown
@@ -25,7 +26,4 @@
 - [GitHub](https://github.com/margittennosaar)
 - [LinkedIn](https://www.linkedin.com/in/margittennosaar/)
 
-Hoang Pham
-- [GitHub](https://github.com/phamt6)
-- [LinkedIn](https://www.linkedin.com/in/tienhoangpham/)
  
