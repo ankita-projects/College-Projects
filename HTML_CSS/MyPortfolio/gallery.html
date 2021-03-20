@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Margit Tennosaar" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MyPortfolio</title>
+  </head>
+  <body>
     <header>
       <div class="navbar">
         <div class="container">
-        <div class="logo">
           <div class="logo"><a href="./index.html">Ankita Bhatnagar</a></div>
+          <nav>
+            <button id="mobileButton">
+              <span class="material-icons"> menu </span>
+            </button>
+            <ul>
+              <li><a href="./index.html#work">Work</a></li>
+              <li><a href="./index.html#experience">Experience</a></li>
+              <li><a href="./index.html#skills">Skills</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./animation.html">Timeline</a></li>
+              <li><a href="./gallery.html#footer">Contact me</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <button id="mobileButton">
-            <span class="material-icons"> menu </span>
-          </button>
-          <ul>
-            <li><a href="./index.html#work">Work</a></li>
-            <li><a href="./index.html#experience">Experience</a></li>
-            <li><a href="./index.html#skills">Skills</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="#footer">Contact</a></li>
-          </ul>
-        </nav>
       </div>
-    </div>
-        </header>
+    </header>
     <main>
       <section id="gallery">
         <div class="container">
@@ -101,10 +112,6 @@
               />
             </div>
           </div>
-          <p>
-            Images from:
-            <a target="_blank" href="https://unsplash.com/">Unsplash</a>
-          </p>
         </div>
       </section>
     </main>
@@ -126,11 +133,12 @@
           </div>
           <button type="submit">Send message</button>
         </form>
-          </div>
+        <p class="copyright">Copyright &copy; My Website 2021</p>
+      </div>
       <button id="backToTop">
         Top<span class="material-icons"> arrow_upward </span>
       </button>
     </footer>
-    <script src="script.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
