@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
       rel="stylesheet"
@@ -17,7 +20,7 @@
   </head>
   <body>
     <header>
-      <div class="main_nav">
+      <div class="navbar">
         <div class="container">
           <div class="logo"><a href="./index.html">Ankita Bhatnagar</a></div>
           <nav>
@@ -29,7 +32,7 @@
               <li><a href="./index.html#experience">Experience</a></li>
               <li><a href="./index.html#skills">Skills</a></li>
               <li><a href="./gallery.html">Gallery</a></li>
-              <li><a href="./animation.html">Timeline</a></li>
+              <li><a href="./animation.html">Blog</a></li>
               <li><a href="#footer">Contact</a></li>
             </ul>
           </nav>
@@ -102,26 +105,27 @@
       <section id="skills">
         <div class="container">
           <h2>Skills</h2>
-          <div class="skills_group">
+          <div class="skills-container">
             <div class="skill">
-              <i class="demo-icon icon-html5"></i>
-              <p>HTML5</p>
-              <progress value="65" max="100">65%</progress>
+              <label for="html5"> HTML</label>
+              <progress id="html5" value="65" max="100"></progress>
+              <p>70%</p>
             </div>
             <div class="skill">
-              <i class="demo-icon icon-css3"></i>
-              <p>CSS3</p>
-              <progress value="60" max="100">60%</progress>
+              <label for="css3"> CSS</label>
+              <progress id="css3" value="60" max="100"></progress>
+              <p>60%</p>
             </div>
             <div class="skill">
-              <i class="demo-icon icon-group"></i>
-              <p>Javascript</p>
-              <progress value="45" max="100">50%</progress>
+              <label for="javascript"> JavaScript</label>
+
+              <progress id="javascript" value="45" max="100"></progress>
+              <p>50%</p>
             </div>
             <div class="skill">
-              <i class="demo-icon icon-award"></i>
-              <p>Bootstrap</p>
-              <progress value="50" max="100">50%</progress>
+              <label for="react">Bootstrap</label>
+              <progress id="react" value="40" max="100"></progress>
+              <p>0%</p>
             </div>
           </div>
         </div>
@@ -147,10 +151,18 @@
         </form>
         <div class="social-menu">
           <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
           </ul>
         </div>
         <p class="copyright">Copyright &copy; My Portfolio</p>

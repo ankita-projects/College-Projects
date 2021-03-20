@@ -1,4 +1,4 @@
-let header = document.querySelector(".main_nav");
+let header = document.querySelector(".navbar");
 let buttonBackToTop = document.getElementById("backToTop");
 let buttonMobile = document.getElementById("mobileButton");
 let nav = document.querySelector("nav");
