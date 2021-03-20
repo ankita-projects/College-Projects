@@ -19,7 +19,7 @@
 
 # Author and acknowlegement
  - Ankita Bhatnagar
- - [GitHub]ankita-projects
+ - [GitHub](ankita-projects)
  - [LinkedIn](https://www.linkedin.com/in/ankita-bhatnagar-b9101b21/)
 
 - Margit Tennosaar
