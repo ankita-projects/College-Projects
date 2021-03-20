@@ -1,0 +1,24 @@
+body{
+    background-color: pink;
+}
+p{
+    color:blue;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color:yellow;
+}
+#important{
+    font-size: 40px;
+}
+.circle{
+    background-color: tomato;
+    height : 200px;
+    width :200px;
+    border-radius: 50%;
+}
