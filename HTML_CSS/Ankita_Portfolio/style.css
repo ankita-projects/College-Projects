@@ -226,7 +226,7 @@ progress[value]::-webkit-progress-bar {
   box-shadow: 0 2px 5px #00000080 inset;
 }
 progress[value]::-webkit-progress-value {
-  background: rgb(240, 152, 152);
+  background: rgb(240, 189, 189);
   background-image: -webkit-linear-gradient(
     150deg,
     var(--accent-color-1) 50%,
