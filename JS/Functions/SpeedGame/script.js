@@ -18,16 +18,24 @@ const playAudio = (source, loop) => {
   audio.loop = loop;
 };
 let speed = 1500;
-let movingCircles = () => {
-  //for keep changing the bulbs in every 1 sec
+let movingCircles = () => {                         //for keep changing the bulbs in every 1 sec
+                                           
+  let currentActive = "";
   document.querySelectorAll(".bulb").forEach((element) => {
-    //hiding away all the birds
-    element.style.setProperty("content", "");
+    if (element.style.content != "") {
+      currentActive = element.id;
+      currentActive = parseInt(currentActive.replace("bulb", ""));
+      console.log(currentActive);
+    }
+    element.style.setProperty("content", ""); //hiding away all the birds
   });
-  var d = Math.floor(Math.random() * 4) + 1; // get random number between 1 and 4;
-  document
-    .getElementById("bulb" + d)
-    .style.setProperty("content", "url(./image.png)");
+  let randomNum = Math.floor(Math.random() * 4) + 1; // get random number between 1 and 4;
+  if (randomNum == currentActive) {
+    randomNum = randomNum == 4 ? 1 : randomNum + 1; //This is done make sure not to repeate bird to the same location
+  }
+  let showBirdElement = document.getElementById("bulb" + randomNum);
+
+  showBirdElement.style.setProperty("content", "url(./image.png)");
   birdCount++;
   if (birdCount > hitCount + 3) {
     // After missed three highlighted bulbs game ends
@@ -35,7 +43,7 @@ let movingCircles = () => {
     return;
   }
   if (hitCount > 4) {
-    speed = speed - 500;                                 //reducing the time interval to increase speed.
+    speed = speed - 500; //reducing the time interval to increase speed.
   }
   intervalId = setTimeout(movingCircles, speed);
 };
