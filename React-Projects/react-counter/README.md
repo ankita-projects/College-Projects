@@ -1,0 +1,1 @@
+# Counter app created with create-react-app
