@@ -11,7 +11,7 @@ body{
 header,
 footer{
   padding: 1rem;
-  text-align: left;
+  text-align: center;
   width: 100%;
   background-color: floralwhite;
 }
@@ -23,7 +23,7 @@ footer{
   width: 200px;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   font-size: 3rem;
 }
