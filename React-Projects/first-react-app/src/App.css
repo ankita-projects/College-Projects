@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-image: linear-gradient(rgb(72, 75, 248), #fff);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.boxes {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(255, 166, 0, 0.527);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-right: 20px;
+  padding: 1rem;
+  color: rgb(83, 110, 197);
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: orchid;
+  color: aliceblue;
+  border-color: transparent;
+}
+
+main button {
+  display: block;
+  margin: 1rem auto;
+}
+
+footer {
+  margin-top: 20px;
+}
