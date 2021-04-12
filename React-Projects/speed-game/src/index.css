@@ -1,0 +1,37 @@
+  
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url("./assests/img/background.png");
+  height: 100%;
+  font-family: "Press Start 2P", "Courier New", Courier, monospace;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+h1 {
+  color: #a8e714;
+  text-shadow: -4px 0 #3c5aa6, 0 4px #3c5aa6, 4px 0 #3c5aa6, 0 -4px #3c5aa6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576) {
+  html {
+    font-size: 13px;
+  }
+}
