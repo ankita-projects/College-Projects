@@ -1,5 +1,5 @@
   
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +10,9 @@
 body {
   background-image:url("./assests/img/background.png");
   height: 100%;
-  font-family: "Press Start 2P", "Courier New", Courier, monospace;
+  font-family: 'Cinzel', serif;
+  font-family: 'Satisfy', cursive;
+  font-size: 33px;
   text-align: center;
   line-height: 1.8rem;
 }
