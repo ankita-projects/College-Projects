@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.form-container{
+    background-color:#eec06a ;
+    color :azure;
+
+}
+form{
+    padding: 1.5rem;
+}
+label {
+    width: 150px;
+    display: inline-block;
+  }
+  
+  form div {
+    margin: 1rem;
+  }
+  
+  input,
+  textarea,
+  select {
+    font-family: 'Oswald', sans-serif;
+    background: #f4f4f4;
+    border: 1px solid rgb(102, 102, 102);
+    width: 250px;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  button {
+    background-color: darkolivegreen;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 165px;
+  }
