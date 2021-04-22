@@ -1,36 +1,36 @@
 import React from "react";
 import "./Popup.css";
 
-const reloadHandler = () => {
-  window.location.reload();
-};
 
-const Popup = ({ firstname, lastname, phonenumber, message, role, submit }) => {
+const Popup = ({
+	firstName,
+	lastName,
+	phoneNumber,
+	role,
+	message,
+	backBtn,
+	submit,
+}) => {
   return (
     <div className="popup-container">
       <div className="popup">
-        <h1>Your note:</h1>
-        <div>
-          <p>
-            First name: <span>{firstname}</span>
-          </p>
-          <p>
-            Last name: <span>{lastname}</span>
-          </p>
-          <p>
-            Phonenumber: <span>{phonenumber}</span>
-          </p>
-          <p>
-            Message: <span>{message}</span>
-          </p>
-          <p>
-            Role: <span>{role}</span>
-          </p>
-          <button onClick={submit}>Yes, I am sure</button>
-          <button className="secondary" onClick={reloadHandler}>
-            Nope, don't want to post it
-          </button>
-        </div>
+      <h2>Confirm Your Details</h2>
+				<p>First Name: {firstName}</p>
+				<p>Last Name: {lastName}</p>
+				<p>Phone Number: {phoneNumber}</p>
+				<p>Role: {role}</p>
+				<p>Message: {message}</p>
+
+				<button type='submit' onClick={submit} className='submit-btn'>
+					Send
+				</button>
+				<button
+					type='button'
+					onClick={backBtn}
+					className='secondary'
+				>
+					Go back
+				</button>
       </div>
     </div>
   );

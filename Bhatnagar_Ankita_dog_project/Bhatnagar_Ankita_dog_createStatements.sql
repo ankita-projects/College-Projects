@@ -1,9 +1,12 @@
+DROP database dogdb;
 create database dogdb;
+
 CREATE USER 'william'@'localhost' IDENTIFIED BY 'aqJA6jQ5';
-GRANT ALL PRIVILEGES ON * . * TO 'william'@'localhost';
+GRANT ALL PRIVILEGES ON dogdb.* TO 'william'@'localhost';
 
 
 use dogdb;
+DROP TABLE dog;
 CREATE TABLE dog (
 number integer PRIMARY KEY,
 name varchar(29),

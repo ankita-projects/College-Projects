@@ -3,45 +3,56 @@ import React, { Component } from "react";
 import Form from "./Components/Form";
 import View from "./Components/View";
 import Popup from "./Components/Popup";
+import NotesList from "./Components/NotesList";
 
 
 class App extends Component {
   state = {
-    firstname: "",
-    lastname: "",
-    phonenumber: "",
-    role: "",
-    message: "",
-    showpopup: false,
-   };
+    form: {
+			firstName: "",
+			lastName: "",
+			phoneNumber: "",
+			role: "",
+			message: "",
+		},
+		showPopup: false,
+		notes: [],
+	};
 
-   changeHandler = (e) => {
+
+   changeHandler = (event) => {
     this.setState({
-      [e.target.name]: e.target.value,
+      form: { ...this.state.form, [event.target.id]: event.target.value },
     });
   };
 
-  popupHandler = (e) => {
+  popupHandler = (event) => {
     this.setState({ showPopup: true });
-    e.preventDefault();
+    event.preventDefault();
   };
 
+  closePopupHandler = () => {
+		this.setState({ showPopup: false });
+	};
+
   render() {
-    const props = {
-      firstname: this.state.firstname,
-      lastname: this.state.lastname,
-      phonenumber: this.state.phonenumber,
-      message: this.state.message,
-      role: this.state.role,
-    };
-    return (
-      <div>
-        <Form change={this.changeHandler} submit={this.popupHandler} />
-        <View {...props} />
-        {this.state.showPopup && <Popup {...props} />}
-      </div>
-    );
-  }
+		return (
+			<div className='container'>
+				<main>
+					<Form input={this.changeHandler} submit={this.popupHandler} />
+					<View {...this.state.form} />
+					<NotesList notes={this.state.notes} />
+				</main>
+				{this.state.showPopup && (
+					<Popup
+						{...this.state.form}
+			
+						backBtn={this.closePopupHandler}
+					/>
+				)}
+			</div>
+		);
+	}
 }
 
 export default App;

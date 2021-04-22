@@ -30,7 +30,7 @@ const listPokemon = () => {
   fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
     .then((response) => response.json())
     .then((data) => {
-      createPage(data.results);
+      createPage(data);
     });
 };
 window.addEventListener("DOMContentLoaded", listPokemon);
