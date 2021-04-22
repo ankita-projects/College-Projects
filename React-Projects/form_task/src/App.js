@@ -39,7 +39,7 @@ class App extends Component {
 		return (
 			<div className='container'>
 				<main>
-					<Form input={this.changeHandler} submit={this.popupHandler} />
+					<Form change={this.changeHandler} submit={this.popupHandler} />
 					<View {...this.state.form} />
 					<NotesList notes={this.state.notes} />
 				</main>
