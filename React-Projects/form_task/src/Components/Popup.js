@@ -1,7 +1,9 @@
 import React from "react";
 import "./Popup.css";
 
-
+const closeHandler = () => {
+	window.location.reload();
+  };
 const Popup = ({
 	firstName,
 	lastName,
@@ -26,10 +28,10 @@ const Popup = ({
 				</button>
 				<button
 					type='button'
-					onClick={backBtn}
+					onClick={closeHandler}
 					className='secondary'
 				>
-					Go back
+			   Back
 				</button>
       </div>
     </div>

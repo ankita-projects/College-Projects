@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 import Form from "./Components/Form";
 import View from "./Components/View";
 import Popup from "./Components/Popup";
@@ -19,6 +20,12 @@ class App extends Component {
 		notes: [],
 	};
 
+	componentDidMount() {
+		fetch("http://localhost:3002/notes")
+		  .then((response) => response.json())
+		  .then((data) => this.setState({ notes: data }));
+	  }
+	
 
    changeHandler = (event) => {
     this.setState({
@@ -31,9 +38,18 @@ class App extends Component {
     event.preventDefault();
   };
 
-  closePopupHandler = () => {
-		this.setState({ showPopup: false });
-	};
+  sendDataHandler = () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(this.state.form),
+    };
+
+    fetch("http://localhost:3002/notes", requestOptions);
+    alert("Note is posted",window.location.reload());
+	
+  };
+  
 
   render() {
 		return (
@@ -47,7 +63,8 @@ class App extends Component {
 					<Popup
 						{...this.state.form}
 			
-						backBtn={this.closePopupHandler}
+						backBtn={this.closeHandler}
+						submit = {this.sendDataHandler}
 					/>
 				)}
 			</div>

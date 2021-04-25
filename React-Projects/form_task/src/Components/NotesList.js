@@ -8,7 +8,7 @@ const NotesList = ({ notes }) => {
         {notes.map((note) => {
           return(
           <li key={note.id}>
-            {note.role}:{note.message}
+            "{note.message}"
           </li>
           );
         })}

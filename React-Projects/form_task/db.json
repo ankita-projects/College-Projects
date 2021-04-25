@@ -1,0 +1,44 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "firstname": "Ankita",
+      "lastname": "Bhatnagar",
+      "phonenumber": "5325234532",
+      "message": "have fun",
+      "role": "student"
+    },
+    {
+      "id": 2,
+      "firstname": "Laura",
+      "lastname": "Kiv",
+      "phonenumber": "747474747",
+      "message": "have a nice day",
+      "role": "none"
+    },
+    {
+      "id": 3,
+      "firstname": "Sara",
+      "lastname": "San",
+      "phonenumber": "123123211",
+      "message": "study hard",
+      "role": "teacher"
+    },
+    {
+      "firstName": "Ankita",
+      "lastName": "Bhatnagar",
+      "phoneNumber": "0504801901",
+      "role": "student",
+      "message": "jjjjjjjjjjj",
+      "id": 4
+    },
+    {
+      "firstName": "Ankit",
+      "lastName": "Nigam",
+      "phoneNumber": "0504801901",
+      "role": "",
+      "message": "maaa ka bosa",
+      "id": 5
+    }
+  ]
+}
